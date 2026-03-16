@@ -44,6 +44,7 @@ class _AuthScreenState extends State<AuthScreen> {
                 ),
               ),
             ),
+            SizedBox(height: 3),
             Center(
               child: Text(
                 isForgotPassword
