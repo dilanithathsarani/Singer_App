@@ -12,18 +12,27 @@ class CustomTextField extends StatefulWidget {
 }
 
 class _CustomTextFieldState extends State<CustomTextField> {
-  bool isVisible = true;
+  bool isHide = false;
 
   @override
   Widget build(BuildContext context) {
     return TextField(
       cursorColor: Colors.grey.shade800,
-      obscureText: !isVisible,
+      obscureText: !isHide,
       decoration: InputDecoration(
         labelText: widget.label,
         labelStyle: TextStyle(color: Colors.grey.shade800),
         prefixIcon: widget.icon == null ? null : Icon(widget.icon),
-        suffixIcon: widget.isPassword ? Icon(Icons.visibility) : null,
+        suffixIcon: widget.isPassword
+            ? IconButton(
+                onPressed: () {
+                  setState(() {
+                    isHide = !isHide;
+                  });
+                },
+                icon: Icon(isHide ? Icons.visibility : Icons.visibility_off),
+              )
+            : null,
         focusColor: Colors.grey.shade800,
         focusedBorder: OutlineInputBorder(
           borderSide: BorderSide(color: Colors.grey.shade700),
