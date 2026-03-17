@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "232360602082",
+    "project_id": "singer-amanda",
+    "storage_bucket": "singer-amanda.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:232360602082:android:6b41be3d577ebe3b3ff1bb",
+        "android_client_info": {
+          "package_name": "lk.amanda.singer"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEUJ7AgTSa9z59gy6m4UrF0h_qDq6fchI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
